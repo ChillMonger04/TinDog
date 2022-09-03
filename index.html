@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TinDog</title>
+  <link rel="apple-touch-icon" type="image/x-icon" href="images/paw-solid.ico">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="https://kit.fontawesome.com/b12bc02b9a.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@800&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@800&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <section id="title">
+    <div class="container-fluid">
+      <!-- we created the container for the navbar and the basic text and img, fluid container are responsive i.e as size changes the collapse or expand.
+       container-fluid is a full width container, spanning the entire width of the viewport. -->
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- class used for basic stlying of navbar -->
+        <a class="navbar-brand" href="https://www.linkedin.com/in/jasjeet-singh-mann-62a24b225/">tindog</a> <!-- For our brand name we use this CSS class -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span> <!-- We use ths to create the the toggle button when our screen is collapsed -->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <!-- this id gets targetted by the button -->
+          <ul class="navbar-nav ms-auto">
+            <!-- ms-auto is the spacing to send it to right corner m margin s start -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+
+      <div class="row">
+        <div class="col-lg-6">
+          <!-- we used the col property to make the iphonr img appear on the right, and text on left, col-lg-6 to give 50% to all of them and when lesser than lg full 100% -->
+          <h1>Meet new and interesting dogs nearby.</h1>
+          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i>&nbsp Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fa-brands fa-google-play"></i>&nbsp Download</button>
+          <!-- We applied a custom class download-button to customise our own button aprat from the bootstarp class -->
+        </div>
+        <div class="col-lg-6">
+          <img class="dog-img" src="images/iphone6.png" alt="iphone-mockup">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+    <div class="row">
+      <div class="feature-box col-lg-4">
+        <h3 class="feature-heading"><i class="icon fa-solid fa-circle-check fa-4x"></i><br>Easy to use.</h3>
+        <p class="feature-text">So easy to use, even humans can use do it!</p>
+      </div>
+      <div class="feature-box col-lg-4">
+        <h3 class="feature-heading"><i class="icon fa-solid fa-bullseye fa-4x"></i><br>Elite Clientele</h3>
+        <p class="feature-text">We have all the dogs, from the hottest to the smartest.</p>
+      </div>
+      <div class="feature-box col-lg-4">
+        <h3 class="feature-heading"><i class="icon fa-solid fa-heart fa-4x"></i><br>Guaranteed to work.</h3>
+        <p class="feature-text">Find the love of your life or get your money back.</p>
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+    <div id="testimonial-carousel" class="carousel slide" data-bs-ride="false">
+      <!-- data ride false means it will not cahnge automatically but when the buttons are clicked -->
+      <div class="carousel-inner">
+        <!-- The carousel-inner class used to hold slider items. It is a wrapper for wrapping the elements. -->
+        <div class="carousel-item active">
+          <!-- the first carousel slide should always be active -->
+          <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof!</h2>
+          <img class="testimonial-img" src="images/dog-img.jpg" alt="dog-profile">
+          <em><br>Pebbles, New Delhi</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">I used to be so lonely and depressed, but with TinDog's help, I've found the love of my life. I think XD.</h2>
+          <img class="testimonial-img" src="images/beverly-img.png" alt="lady-profile">
+          <em><br>Beverly, Chandigarh</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">Thanks to TinDog now I can happily say that I married the love of my life. I like the user-friendly interface of TinDog.</h2>
+          <img class="testimonial-img" src="images/married-dogs.png" alt="lady-profile">
+          <em><br>Max and Bella, Banglore</em>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button> <!-- previous button -->
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span> <!-- next button-->
+      </button>
+    </div>
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <img class="press-img" src="images/GQ-logo.png" alt="GQ-logo">
+    <img class="press-img" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-img" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-img" src="images/india-today-logo.png" alt="india-today-logo">
+
+  </section>
+
+  <!-- Interface Experience -->
+
+  <section id="interface">
+    <div class="container-fluid-2">
+      <div class="row">
+        <div class="col-lg-6">
+          <img class="chats-img" src="images/chats-final.png" alt="tindog-chats">
+        </div>
+        <div class="col-lg-6">
+          <h1>Chat for hours with your loved ones!</h1><i class="icon-interface fa-solid fa-face-grin-hearts fa-3x"></i>&nbsp&nbsp<i class="icon-interface fa-solid fa-face-grin-hearts fa-3x"></i>&nbsp&nbsp<i
+            class="icon-interface fa-solid fa-face-grin-hearts fa-3x"></i>&nbsp&nbsp<br><br>
+          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i>&nbsp Download</button>
+          <button type="button" class="btn btn-outline-dark btn-lg download-button"><i class="fa-brands fa-google-play"></i>&nbsp Download</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2 class="card-title">A Plan for Every Dog's Needs</h2> <br>
+    <p>Simple and affordable price plans for your and your dog.</p> <br>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <i class="fa-solid fa-check"></i>
+            <h3> Standard</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="card-price">Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="card-btn btn btn-lg btn-outline-primary">Start Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <i class="fa-solid fa-check"></i>
+            <h3> Super</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="card-price"> ₹690 / year</h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <a href="sign-up.html"><button type="button" class="card-btn btn btn-lg btn-primary">Sign Up</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <i class="fa-solid fa-check"></i>
+            <h3> Premium</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="card-price"> ₹4200 / year</h2>
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <a href="sign-up.html"><button type="button" class="card-btn btn btn-lg btn-primary">Sign Up</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3 class="final-line">Find the True Love of Your Life Today. Woof.</h3>
+    <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i>&nbsp Download</button>
+    <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fa-brands fa-google-play"></i>&nbsp Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+
+    <a href="https://twitter.com/jassiiii_04"><i class="fa-brands fa-twitter"></i></a>&nbsp&nbsp&nbsp
+    <a href="https://www.instagram.com/_jasjeetmann_04/"><i class="fa-brands fa-instagram"></i></a>&nbsp&nbsp&nbsp
+    <a href="https://www.linkedin.com/in/jasjeet-singh-mann-62a24b225/"><i class="fa-brands fa-linkedin"></i></a>&nbsp&nbsp&nbsp
+    <a href="https://github.com/ChillMonger04"><i class="fa-brands fa-github"></i></a><br><br>&nbsp&nbsp&nbsp
+    <p>© Copyright TinDog. Jasjeet Singh Mann.</p>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

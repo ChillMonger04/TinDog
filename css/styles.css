@@ -1,0 +1,268 @@
+#title {
+  background-color: #ff4c68;
+}
+
+#features {
+  padding: 6% 15%;
+  background-color: #fff;
+  position: relative;
+  line-height: 1.7;
+  /* We used the relative postiong here so not to break the flow of the HTML code */
+  z-index: 1;
+  /* z-index only works if the postion is fixed, relative or absolute */
+}
+
+#testimonials {
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
+}
+
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+#interface {
+  padding: 6% 15% 3.69%;
+}
+
+#pricing {
+  text-align: center;
+  background-color: #ef8172;
+  padding: 4% 15% 6%;
+  line-height: 1.5;
+  position: relative;
+  /* We used the relative postiong here so not to break the flow of the HTML code */
+  z-index: 1;
+  /* z-index only works if the postion is fixed, relative or absolute */
+}
+
+#cta {
+  background-color: #ff4c68;
+  padding: 4% 15% 2%;
+  text-align: center;
+}
+
+#footer {
+  text-align: center;
+  background-color: #fff;
+  padding: 4% 15% 1%;
+}
+
+
+
+
+h1 {
+  color: #FDD2BF;
+  font-family: 'Sora', sans-serif;
+  font-size: 4rem;
+  line-height: 1.5;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+
+
+
+/* Navbar */
+.navbar {
+  padding-bottom: 4.5rem;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+
+
+
+/* Title */
+.download-button {
+  margin: 5% 3% 5% 0;
+  /* 0 for the bottom */
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+  /* 3% top and bottom, 15% left and right */
+}
+
+.dog-img {
+  width: 24%;
+  /* to make the img accquire 60% of the total width of the col grid container */
+  transform: rotate(25deg);
+  position: absolute;
+}
+
+
+
+
+/* Feature */
+.feature-text {
+  color: #8f8f8f;
+}
+
+.feature-heading {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 5%;
+}
+
+.icon {
+  color: #ef8172;
+  margin-bottom: 1.2rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+
+
+
+/* Testimonials */
+.testimonial-img {
+  border-radius: 100%;
+  width: 20%;
+  margin: 20px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+  /* We did this to make the arrows go wider, previously we were applying the padding to id testimonial which also paded the arrows inside, so to make the arrows wider we delete that padding */
+}
+
+
+
+
+/* Press */
+.press-img {
+  width: 15%;
+  margin: 20px 20px 50px;
+  /* 20px form the top, 20px from left & right and 50px from the bottom */
+}
+
+
+
+
+/* Interface Experience */
+.chats-img {
+  width: 35%;
+  /* to make the img accquire 60% of the total width of the col grid container */
+  transform: rotate(-20deg);
+  filter: drop-shadow(7.5px 7.5px 7.5px #ef8172);
+  position: absolute;
+}
+
+.icon-interface {
+  color: #FDD2BF;
+}
+
+.icon-interface:hover {
+  color: #ff4c68;
+}
+
+
+
+
+/* Pricing */
+.card-btn {
+  width: 60%;
+}
+
+.card-price {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+}
+
+.card {
+  height: 400px;
+}
+
+.card-title {
+  font-family: 'Poppins', sans-serif;
+}
+
+.button-inside-text
+{
+  color: #fff;
+}
+
+
+
+
+/* Call to Action */
+.final-line {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
+
+@media (max-width: 1028px) {
+
+  #title{
+    text-align: center;
+  }
+
+  #features {
+    position: static;
+    z-index: 0;
+  }
+
+  #interface {
+    text-align: center;
+    position: static;
+    z-index: 0;
+  }
+
+  #pricing {
+    position: static;
+    z-index: 0;
+  }
+
+  .download-button {
+    margin: 5% 3% 5% 0;
+    /* 0 for the bottom */
+  }
+
+  .dog-img {
+    position: relative;
+    transform: rotate(0);
+  }
+
+  .chats-img {
+    transform: rotate(0);
+    filter: drop-shadow(7.5px 7.5px 7.5px #ef8172);
+    position: static;
+  }
+
+}
